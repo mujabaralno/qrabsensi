@@ -1,0 +1,8 @@
+POST http://192.168.1.8:8080/api/attendance
+Content-Type: application/json
+
+{
+  "userId": "6745726be932f1fd51b0f512",
+  "sessionId": "67487a541cb412c7dea6004e",
+  "status": "Hadir"
+}
