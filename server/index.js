@@ -8,6 +8,7 @@ const port = process.env.PORT || 8080;
 
 const attendanceSessionRoutes = require("./routes/attendanceSessionRoutes");
 const attendanceDataRoutes = require("./routes/attendanceDataRoutes");
+const attendanceHistoryRoutes = require("./routes/attendanceHistoryRoutes");
 
 app.use(cors());
 
@@ -35,6 +36,8 @@ startDatabase();
 // Use routes for sessions and attendance
 app.use("/api/sessions", attendanceSessionRoutes);
 app.use("/api/attendance", attendanceDataRoutes);
+app.use("/api/history", attendanceHistoryRoutes);
+
 
 // Listen on the specified port and bind to all IP addresses
 app.listen(port, "0.0.0.0", () => {

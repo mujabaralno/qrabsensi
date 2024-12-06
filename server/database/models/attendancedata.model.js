@@ -13,13 +13,13 @@ const AttendanceDataSchema = new mongoose.Schema({
   },
   status: {
     type: String,
-    enum: ["Hadir", "Mangkir"],
+    enum: ["Hadir", "Mangkir", "Terlambat"],
     required: true,
     default: "Mangkir",
   },
   timestamp: {
     type: Date,
-    default: Date.now, // Default waktu absensi
+    default: Date.now, 
   },
 });
 

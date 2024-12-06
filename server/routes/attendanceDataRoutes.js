@@ -1,8 +1,8 @@
-const express = require("express");
-const { createAttendanceData } = require("../controllers/attendanceDataController");
+    const express = require("express");
+    const { createAttendanceData } = require("../controllers/attendanceDataController");
 
-const router = express.Router();
+    const router = express.Router();
 
-router.post("/", createAttendanceData);
+    router.post("/", createAttendanceData);
 
-module.exports = router;
+    module.exports = router;
